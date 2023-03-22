@@ -1,2 +1,3 @@
-# required-workflow
-Used to share 'required workflow' in the company
+# Required-workflow
+
+Used to share 'required workflow' in the company, nothing more...
