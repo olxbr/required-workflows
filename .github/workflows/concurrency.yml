@@ -1,0 +1,7 @@
+name: Job Concurrency Checker
+on: [push]
+
+## Cancel concurrent workflow run to avoid wasting minutes
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
