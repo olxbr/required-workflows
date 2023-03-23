@@ -1,5 +1,5 @@
 name: Job Concurrency Checker
-on: [push]
+on: [pull_request]
 
 ## Cancel concurrent workflow run to avoid wasting minutes
 concurrency:
