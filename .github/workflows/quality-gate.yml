@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  NO_PROXY: ${{ secrets.OLX_NEXUS_NO_PROXY }}
+  HTTP_PROXY: ${{ secrets.OLX_NEXUS_PROXY }}
+
 jobs:
   quality-gate:
     name: Quality Gate
