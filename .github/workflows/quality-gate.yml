@@ -16,3 +16,4 @@ jobs:
         uses: olxbr/quality-gate-action@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          docs_url: "https://olxbr.atlassian.net/l/cp/vQZeDHDM"
