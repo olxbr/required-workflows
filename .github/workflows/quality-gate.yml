@@ -23,11 +23,12 @@ jobs:
           docs_url: "https://olxbr.atlassian.net/l/cp/vQZeDHDM"
   
   skip-quality-gate-for-non-default-branch:
+    if: github.base_ref != github.event.repository.default_branch
     name: Skip Quality Gate (Non default branch)
     runs-on: ubuntu-latest
     steps:
       - shell: bash
         run: |
-          ## PR DIFFERENT OF DEFAUL BRANCH
+          ## PR DIFFERENT OF DEFAULT BRANCH
           echo "Skipped"
   
