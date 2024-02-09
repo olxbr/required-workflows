@@ -8,6 +8,6 @@ concurrency:
 
 jobs:
   IsConcurrency:
-    runs-on: self-hosted
+    runs-on: shared
     steps:
       - run: true
